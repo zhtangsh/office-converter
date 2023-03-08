@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: ${MAX_FILE_SIZE:100MB}
+      max-request-size: ${MAX_REQUEST_SIZE:100MB}
+
+oc:
+  office:
+    home: ${OC_OFFICE_HOME:/opt/libreoffice7.5/}
+    host: ${OC_OFFICE_HOST:127.0.0.1}
+    ports: ${OC_OFFCIE_PORTS:8000,8001}
+    task-execution-timeout: ${OC_TASK_EXECUTION_TIMEOUT:5}
+    task-queue-timeout: ${OC_TASK_QUEUE_TIMEOUT:24}
+    max-tasks-per-process: ${OC_MAX_TASKS_PER_PROCESS:20}
